@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistem Manajemen Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sistem Manajemen Data Mahasiswa</h1>
+
+        <div class="form-box">
+            <input type="text" id="nim" placeholder="NIM">
+            <input type="text" id="nama" placeholder="Nama">
+            <input type="text" id="jurusan" placeholder="Jurusan">
+            <input type="number" id="semester" placeholder="Semester">
+
+            <button onclick="tambahData()">Tambah</button>
+            <button onclick="updateData()">Update</button>
+            <button onclick="resetForm()">Reset</button>
+        </div>
+
+        <input type="text" id="search" placeholder="Cari Mahasiswa..." onkeyup="cariData()">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>NIM</th>
+                    <th>Nama</th>
+                    <th>Jurusan</th>
+                    <th>Semester</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="tabelMahasiswa"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
