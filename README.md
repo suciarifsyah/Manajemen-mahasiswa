@@ -1,1 +1,1 @@
-web suci.html
+index.html
